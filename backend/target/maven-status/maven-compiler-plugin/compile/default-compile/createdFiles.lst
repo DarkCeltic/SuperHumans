@@ -1,0 +1,7 @@
+com\superhuman\config\WebMvcConfig.class
+com\superhuman\entity\SuperHuman.class
+com\superhuman\util\SessionFactoryUtil.class
+com\superhuman\entity\SuperHumanTeams.class
+com\superhuman\config\WebAppInitializer.class
+com\superhuman\config\AppConfig.class
+com\superhuman\util\ConnectionFactory.class

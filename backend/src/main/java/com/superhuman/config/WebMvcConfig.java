@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = { "com.superhuman" })
+@ComponentScan(basePackages = { "com.superhuman", "com.revature" })
 public class WebMvcConfig implements WebMvcConfigurer {
 	@Bean
 	public InternalResourceViewResolver resolver() {

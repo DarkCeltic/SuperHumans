@@ -14,8 +14,8 @@ public class SessionFactoryUtil {
 	private static SessionFactory sessionFactory;
 	private static SessionFactoryUtil sessionFactoryUtil;
 
-	private static final String USERNAME = System.getenv("POSTRGRES_USERNAME");
-	private static final String PASSWORD = System.getenv("POSTRGRES_PASSWORD");
+	private static final String USERNAME = System.getenv("POSTGRES_USERNAME");
+	private static final String PASSWORD = System.getenv("POSTGRES_PASSWORD");
 	private static final String URL = "jdbc:postgresql://" + System.getenv("POSTGRES_URL") + ":5432/SuperHeroes?";
 	private static String schema = "public";
 
@@ -28,6 +28,9 @@ public class SessionFactoryUtil {
 
 	private SessionFactoryUtil() {
 		if (sessionFactory == null) {
+			System.out.println(USERNAME);
+			System.out.println(PASSWORD);
+			System.out.println(URL);
 			Map<String, String> settings = new HashMap<String, String>();
 			settings.put("hibernate.connection.driver_class", "org.postgresql.Driver");
 			settings.put("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
